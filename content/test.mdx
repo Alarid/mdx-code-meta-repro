@@ -1,0 +1,33 @@
+---
+title: Introduction
+description: Test article
+slug: intro
+---
+
+# Introduction
+
+Blablabla.
+
+> This is a quote
+
+And here's a **code block**:
+
+```jsx filename=button.js
+import React from "react"
+
+type Props = {
+  title: string,
+}
+
+export default function Button({ title }: Props) {
+  const [someState, setSomeState] = React.useState(false)
+  return (
+    <div>
+      <button onClick={() => setSomeState((prev) => !prev)}>{title}</button>
+      <p>
+        Some state is <strong>{someState ? "on" : "off"}</strong>
+      </p>
+    </div>
+  )
+}
+```
